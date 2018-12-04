@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+.tile-wrapper {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.tile-container {
+  display: flex;
+  position: relative;
+  width: calc(100% + 30px);
+  flex-wrap: wrap;
+}
+.tile {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  min-height: 200px;
+  line-height: 199px;
+  text-align: center;
+  border: 1px solid black;
+}
+.two-thirds {
+  flex: 0 0 calc(66.66% - 30px);
+}
+.third {
+  flex: 0 0 calc(33.33% - 30px);
+}
+.sixth {
+  flex: 0 0 calc(16.66% - 30px);
+}
+
+.hidden {
+	display: none;
+}
+#btn_click1, #btn_click2,#btn_click3{
+	width: 200px;
+	text-align: center;
+	height: 50px;
+}
